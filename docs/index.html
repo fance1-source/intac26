@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.8, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+    <title>
+      INTAC - International Tourism & Cultures Exhibition & Conference
+    </title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../public/img/brands/conf-background0.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../public/img/brands/conf-background0.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../public/img/brands/conf-background0.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../public/img/brands/conf-background0.png" />
+    <link rel="stylesheet" href="css/style2.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,200&display=swap"
+      rel="stylesheet" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" /> -->
+  </head>
+  <body>
+    <header class="modern-header">
+      <div class="header-container container">
+        <div class="logo-container">
+          <!-- <a href="index.html" class="logo">
+            <img
+              src="../public/img/brands/intac_logo3.png"
+              alt="INTAC Logo"
+              class="logo-img" />
+          </a> -->
+        </div>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="conference.html" class="nav-link">Conference</a>
+            </li>
+            <li class="nav-item">
+              <a href="registration.html" class="nav-link"
+                >Visitor Registration</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="news.html" class="nav-link">News</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <button
+      class="scroll-to-top"
+      id="scrollToTopBtn"
+      aria-label="Scroll to top">
+      ↑
+    </button>
+
+    <section class="video-hero" id="hero-video-section">
+      <div class="video-background-container">
+        <video autoplay muted loop playsinline id="heroVideo">
+          <source
+            src="../public/vid/horizontal-hero-compressed.mp4"
+            type="video/mp4"
+            media="(min-aspect-ratio: 1/1)" />
+          <source
+            src="../public/vid/vertical-hero-compressed.mp4"
+            type="video/mp4"
+            media="(max-aspect-ratio: 1/1)" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section class="about-intac-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title fade-in-left-right">About INTAC'26</h2>
+            <p class="about-subtitle fade-in-left-right">
+              International Tourism, Arts & Culture Exhibition & Conference
+            </p>
+            <p class="about-description fade-in-left-right">
+              INTAC'26 is the premier global platform dedicated to fostering
+              connections and celebrating the rich tapestry of **International
+              Tourism, Arts & Culture**. Our exhibition and conference bring
+              together industry leaders, policymakers, artists, and travelers to
+              explore new frontiers in sustainable tourism, cultural
+              preservation, and creative exchange. Join us to experience a world
+              of opportunities and inspiration.
+            </p>
+            <ul class="about-key-points fade-in-scale">
+              <li>
+                <i class="fas fa-globe-americas"></i> Global Networking
+                Opportunities
+              </li>
+              <li>
+                <i class="fas fa-palette"></i> Showcase of Diverse Arts &
+                Cultures
+              </li>
+              <li>
+                <i class="fas fa-leaf"></i> Focus on Sustainable Tourism
+                Practices
+              </li>
+              <li>
+                <i class="fas fa-users"></i> High-Level Conference & Keynote
+                Speakers
+              </li>
+            </ul>
+            <a href="conference.html" class="cta-button primary large"
+              >Discover the Conference</a
+            >
+          </div>
+          <div class="about-visual fade-in-right-left">
+            <div class="visual-card">
+              <div class="card-icon">
+                <i class="fas fa-plane-departure"></i>
+              </div>
+              <h3 class="card-title">Explore</h3>
+              <p class="card-text">New destinations and market trends.</p>
+            </div>
+            <div class="visual-card">
+              <div class="card-icon"><i class="fas fa-handshake"></i></div>
+              <h3 class="card-title">Connect</h3>
+              <p class="card-text">With global industry leaders.</p>
+            </div>
+            <div class="visual-card">
+              <div class="card-icon"><i class="fas fa-landmark"></i></div>
+              <h3 class="card-title">Celebrate</h3>
+              <p class="card-text">The world's cultural heritage.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="interactive-slider-section">
+      >
+      <div class="cloneable">
+        <div class="overlay">
+          <div class="overlay-inner fade-in-left-right">
+            <div class="overlay-content-wrap">
+              <div class="slider-text-content">
+                <h1 class="slider-title"></h1>
+                <p class="slider-description"></p>
+                <div class="overlay-nav-row">
+                  <button
+                    aria-label="previous slide"
+                    data-slider="button-prev"
+                    class="button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      viewbox="0 0 17 12"
+                      fill="none"
+                      class="button-arrow">
+                      <path
+                        d="M6.28871 12L7.53907 10.9111L3.48697 6.77778H16.5V5.22222H3.48697L7.53907 1.08889L6.28871 0L0.5 6L6.28871 12Z"
+                        fill="currentColor"></path>
+                    </svg>
+                    <div class="button-overlay">
+                      <div class="overlay-corner"></div>
+                      <div class="overlay-corner top-right"></div>
+                      <div class="overlay-corner bottom-left"></div>
+                      <div class="overlay-corner bottom-right"></div>
+                    </div>
+                  </button>
+                  <button
+                    aria-label="next slide"
+                    data-slider="button-next"
+                    class="button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      viewbox="0 0 17 12"
+                      fill="none"
+                      class="button-arrow next">
+                      <path
+                        d="M6.28871 12L7.53907 10.9111L3.48697 6.77778H16.5V5.22222H3.48697L7.53907 1.08889L6.28871 0L0.5 6L6.28871 12Z"
+                        fill="currentColor"></path>
+                    </svg>
+                    <div class="button-overlay">
+                      <div class="overlay-corner"></div>
+                      <div class="overlay-corner top-right"></div>
+                      <div class="overlay-corner bottom-left"></div>
+                      <div class="overlay-corner bottom-right"></div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main fade-in-right-left">
+          <div class="slider-wrap">
+            <div data-slider="list" class="slider-list">
+              <div
+                data-slider="slide"
+                class="slider-slide"
+                data-title="Adventure Travel"
+                data-description="Discover breathtaking destinations from around the globe. From pristine beaches to majestic mountains, experience the world's most iconic locations with expert guides and curated travel experiences that will create memories to last a lifetime."
+                data-readmore="news.html#messages-sec">
+                <div class="slide-inner">
+                  <img
+                    src="../public/img/gallery/home-message1.jpg"
+                    loading="lazy"
+                    sizes="(max-width: 479px) 100vw, 560px"
+                    alt="World Tourism Destination" />
+                  <div class="slide-caption">
+                    <div class="caption-dot"></div>
+                    <p class="caption">Explore the World</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                data-slider="slide"
+                class="slider-slide active"
+                data-title="Message by the Prime Minister"
+                data-description="It gives me great pleasure to extend my heartfelt congratulations on the organisation of the International Tourism, Arts and Culture Exhibition & Conference (INTAC'26)..."
+                data-readmore="news.html#messages-sec">
+                <div class="slide-inner">
+                  <img
+                    src="../public/img/gallery/home-message2.jpg"
+                    loading="lazy"
+                    alt="Image of Prime Minister" />
+                  <div class="slide-caption">
+                    <div class="caption-dot"></div>
+                    <p class="caption">Prime Minister</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                data-slider="slide"
+                class="slider-slide"
+                data-title="Message By Minister of Tourism, Arts & Culture Malaysia"
+                data-description="As Malaysia welcomes the world in celebration of Visit Malaysia'26, the International Tourism, Arts and Culture Exhibition & Conference (INTAC'26) stands as a beacon of collaboration and creativity."
+                data-readmore="news.html#messages-sec">
+                <div class="slide-inner">
+                  <img
+                    src="../public/img/gallery/home-message3.jpg"
+                    loading="lazy"
+                    sizes="(max-width: 479px) 100vw, 560px"
+                    alt="Image of Minister of Tourism" />
+                  <div class="slide-caption">
+                    <div class="caption-dot"></div>
+                    <p class="caption">Minister of Tourism</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                data-slider="slide"
+                class="slider-slide"
+                data-title="INTAC'26"
+                data-description="International Tourism, Arts & Cultures Exhibition & Conference (INTAC'26) continues the momentum established by the highly successful INTAC 2024 — advancing Malaysia's role as a global nexus for tourism, arts, and culture."
+                data-readmore="news.html#messages-sec">
+                <div class="slide-inner">
+                  <img
+                    src="../public/img/gallery/home-message4.jpg"
+                    loading="lazy"
+                    sizes="(max-width: 479px) 100vw, 560px"
+                    alt="Luxury Travel" />
+                  <div class="slide-caption">
+                    <div class="caption-dot"></div>
+                    <p class="caption">Events</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid fade-in-bottom-top">
+          <div class="stat-item">
+            <div class="stat-number" data-count="50">0</div>
+            <div class="stat-label">Participating Countries</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="400">0</div>
+            <div class="stat-label">Exhibitors</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="100000">0</div>
+            <div class="stat-label">Visitors</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="120">0</div>
+            <div class="stat-label">Booths</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Replace the existing tourism-experience-section with this version -->
+    <section class="tourism-experience-section">
+      <div class="video-background">
+        <video autoplay muted loop playsinline id="tourismVideo">
+          <source
+            src="../public/vid/INTAC24-tourexsection.mp4"
+            type="video/mp4" />
+          <!-- Fallback for browsers that don't support video -->
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="experience-content">
+          <div class="experience-text">
+            <h2 class="experience-title">Discover World Tourism</h2>
+            <p class="experience-description">
+              Immerse yourself in extraordinary travel experiences that connect
+              cultures, celebrate diversity, and create lasting memories across
+              continents.
+            </p>
+            <button class="cta-button primary">Explore Destinations</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add this section between the tourism-experience-section and interactive-gallery sections -->
+    <section class="invited-countries-section">
+      <div class="container">
+        <div class="section-header fade-in-bottom-top">
+          <h2 class="section-title">Global Participation</h2>
+          <p class="section-subtitle">
+            33 countries across 7 regions joining INTAC'26
+          </p>
+        </div>
+
+        <!-- Enhanced Countries Grid -->
+        <div class="countries-showcase">
+          <!-- Southeast Asia -->
+          <div
+            class="region-showcase fade-in-bottom-top"
+            data-region="southeast-asia">
+            <div class="region-visual">
+              <div class="region-map">
+                <i class="fas fa-umbrella-beach"></i>
+              </div>
+              <div class="region-info">
+                <h3 class="region-title">Southeast Asia</h3>
+                <div class="country-count">7 Countries</div>
+              </div>
+            </div>
+            <div class="countries-flow">
+              <span class="country-bubble">Singapore</span>
+              <span class="country-bubble">Thailand</span>
+              <span class="country-bubble">Indonesia</span>
+              <span class="country-bubble">Vietnam</span>
+              <span class="country-bubble">Philippines</span>
+              <span class="country-bubble">Brunei</span>
+              <span class="country-bubble">Cambodia</span>
+            </div>
+          </div>
+
+          <!-- South Asia -->
+          <div
+            class="region-showcase fade-in-bottom-top"
+            data-region="south-asia">
+            <div class="region-visual">
+              <div class="region-map">
+                <i class="fas fa-mountain"></i>
+              </div>
+              <div class="region-info">
+                <h3 class="region-title">South Asia</h3>
+                <div class="country-count">5 Countries</div>
+              </div>
+            </div>
+            <div class="countries-flow">
+              <span class="country-bubble">India</span>
+              <span class="country-bubble">Bangladesh</span>
+              <span class="country-bubble">Sri Lanka</span>
+              <span class="country-bubble">Pakistan</span>
+              <span class="country-bubble">Nepal</span>
+            </div>
+          </div>
+
+          <!-- East Asia -->
+          <div
+            class="region-showcase fade-in-bottom-top"
+            data-region="east-asia">
+            <div class="region-visual">
+              <div class="region-map">
+                <i class="fas fa-city"></i>
+              </div>
+              <div class="region-info">
+                <h3 class="region-title">East Asia</h3>
+                <div class="country-count">4 Countries</div>
+              </div>
+            </div>
+            <div class="countries-flow">
+              <span class="country-bubble">China</span>
+              <span class="country-bubble">Japan</span>
+              <span class="country-bubble">South Korea</span>
+              <span class="country-bubble">Taiwan</span>
+            </div>
+          </div>
+
+          <!-- Middle East -->
+          <div class="region-showcase" data-region="middle-east">
+            <div class="region-visual">
+              <div class="region-map">
+                <i class="fas fa-mosque"></i>
+              </div>
+              <div class="region-info">
+                <h3 class="region-title">Middle East</h3>
+                <div class="country-count">6 Countries</div>
+              </div>
+            </div>
+            <div class="countries-flow">
+              <span class="country-bubble">Saudi Arabia</span>
+              <span class="country-bubble">Qatar</span>
+              <span class="country-bubble">UAE</span>
+              <span class="country-bubble">Oman</span>
+              <span class="country-bubble">Syria</span>
+              <span class="country-bubble">Jordan</span>
+            </div>
+          </div>
+
+          <!-- Europe -->
+          <div class="region-showcase" data-region="europe">
+            <div class="region-visual">
+              <div class="region-map">
+                <i class="fas fa-landmark"></i>
+              </div>
+              <div class="region-info">
+                <h3 class="region-title">Europe</h3>
+                <div class="country-count">6 Countries</div>
+              </div>
+            </div>
+            <div class="countries-flow">
+              <span class="country-bubble">United Kingdom</span>
+              <span class="country-bubble">France</span>
+              <span class="country-bubble">Germany</span>
+              <span class="country-bubble">Italy</span>
+              <span class="country-bubble">Spain</span>
+              <span class="country-bubble">Turkey</span>
+            </div>
+          </div>
+
+          <!-- Africa -->
+          <div class="region-showcase" data-region="africa">
+            <div class="region-visual">
+              <div class="region-map">
+                <i class="fas fa-globe-africa"></i>
+              </div>
+              <div class="region-info">
+                <h3 class="region-title">Africa</h3>
+                <div class="country-count">4 Countries</div>
+              </div>
+            </div>
+            <div class="countries-flow">
+              <span class="country-bubble">Egypt</span>
+              <span class="country-bubble">Morocco</span>
+              <span class="country-bubble">South Africa</span>
+              <span class="country-bubble">Kenya</span>
+            </div>
+          </div>
+
+          <!-- Oceania -->
+          <div class="region-showcase" data-region="oceania">
+            <div class="region-visual">
+              <div class="region-map">
+                <i class="fas fa-water"></i>
+              </div>
+              <div class="region-info">
+                <h3 class="region-title">Oceania</h3>
+                <div class="country-count">2 Countries</div>
+              </div>
+            </div>
+            <div class="countries-flow">
+              <span class="country-bubble">Australia</span>
+              <span class="country-bubble">New Zealand</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="countdown-container fade-in-bottom-top">
+          <div class="countdown-slider">
+            <div class="slider-track">
+              <!-- Image 1 -->
+              <div class="slide">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_81-large.avif"
+                    type="image/avif" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_81-medium.avif"
+                    type="image/avif" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_81-small.avif"
+                    type="image/avif" />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_81-large.webp"
+                    type="image/webp" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_81-medium.webp"
+                    type="image/webp" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_81-small.webp"
+                    type="image/webp" />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_81-large.jpg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_81-medium.jpg" />
+                  <source srcset="../public/img/backgrounds/pic_81-small.jpg" />
+                  <img
+                    src="../public/img/backgrounds/pic_81-medium.jpg"
+                    alt="INTAC Cultural Experience"
+                    loading="lazy" />
+                </picture>
+              </div>
+
+              <!-- Image 2 -->
+              <div class="slide">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_215-large.avif"
+                    type="image/avif" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_215-medium.avif"
+                    type="image/avif" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_215-small.avif"
+                    type="image/avif" />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_215-large.webp"
+                    type="image/webp" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_215-medium.webp"
+                    type="image/webp" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_215-small.webp"
+                    type="image/webp" />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_215-large.jpg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_215-medium.jpg" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_215-small.jpg" />
+                  <img
+                    src="../public/img/backgrounds/pic_215-medium.jpg"
+                    alt="INTAC Tourism Destination"
+                    loading="lazy" />
+                </picture>
+              </div>
+
+              <!-- Image 3 -->
+              <div class="slide">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_228-large.avif"
+                    type="image/avif" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_228-medium.avif"
+                    type="image/avif" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_228-small.avif"
+                    type="image/avif" />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_228-large.webp"
+                    type="image/webp" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_228-medium.webp"
+                    type="image/webp" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_228-small.webp"
+                    type="image/webp" />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_228-large.jpg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_228-medium.jpg" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_228-small.jpg" />
+                  <img
+                    src="../public/img/backgrounds/pic_228-medium.jpg"
+                    alt="INTAC Arts Exhibition"
+                    loading="lazy" />
+                </picture>
+              </div>
+
+              <!-- Image 4 -->
+              <div class="slide">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_165-large.avif"
+                    type="image/avif" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_165-medium.avif"
+                    type="image/avif" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_165-small.avif"
+                    type="image/avif" />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_165-large.webp"
+                    type="image/webp" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_165-medium.webp"
+                    type="image/webp" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_165-small.webp"
+                    type="image/webp" />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_165-large.jpg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_165-medium.jpg" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_165-small.jpg" />
+                  <img
+                    src="../public/img/backgrounds/pic_165-medium.jpg"
+                    alt="INTAC Global Conference"
+                    loading="lazy" />
+                </picture>
+              </div>
+
+              <!-- Image 5 -->
+              <div class="slide">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_208-large.avif"
+                    type="image/avif" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_208-medium.avif"
+                    type="image/avif" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_208-small.avif"
+                    type="image/avif" />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_208-large.webp"
+                    type="image/webp" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_208-medium.webp"
+                    type="image/webp" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_208-small.webp"
+                    type="image/webp" />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_208-large.jpg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_208-medium.jpg" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_208-small.jpg" />
+                  <img
+                    src="../public/img/backgrounds/pic_208-medium.jpg"
+                    alt="INTAC Event Venue"
+                    loading="lazy" />
+                </picture>
+              </div>
+
+              <div class="slide">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_81-large.avif"
+                    type="image/avif" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_81-medium.avif"
+                    type="image/avif" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_81-small.avif"
+                    type="image/avif" />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_81-large.webp"
+                    type="image/webp" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_81-medium.webp"
+                    type="image/webp" />
+                  <source
+                    srcset="../public/img/backgrounds/pic_81-small.webp"
+                    type="image/webp" />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="../public/img/backgrounds/pic_81-large.jpg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../public/img/backgrounds/pic_81-medium.jpg" />
+                  <source srcset="../public/img/backgrounds/pic_81-small.jpg" />
+                  <img
+                    src="../public/img/backgrounds/pic_81-medium.jpg"
+                    alt="INTAC Cultural Experience"
+                    loading="lazy" />
+                </picture>
+              </div>
+            </div>
+
+            <div class="slider-overlay"></div>
+          </div>
+          <div class="countdown-header">
+            <h3>Event Countdown</h3>
+            <p>International Tourism, Arts & Culture Exhibition & Conference</p>
+          </div>
+          <div class="countdown-timer" id="countdownTimer">
+            <div class="countdown-item">
+              <div class="countdown-value" id="days">000</div>
+              <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-value" id="hours">00</div>
+              <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-value" id="minutes">00</div>
+              <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-value" id="seconds">00</div>
+              <div class="countdown-label">Seconds</div>
+            </div>
+          </div>
+          <div class="event-date">
+            <p>
+              Starts: <strong>July 10, 2026</strong> • Kuala Lumpur Convention
+              Centre
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="interactive-gallery">
+      <div class="gallery-container fade-in-bottom-top">
+        <div
+          class="box box-1"
+          style="
+            background-image: url('../public/img/gallery/box_gallery-1.jpg');
+          ">
+          <div class="word-wrapper">
+            <div class="letter">I</div>
+            <div class="rest">ndonesia</div>
+          </div>
+        </div>
+
+        <div
+          class="box box-2"
+          style="
+            background-image: url('../public/img/gallery/box_gallery2-2.jpg');
+          ">
+          <div class="word-wrapper">
+            <div class="letter">N</div>
+            <div class="rest">epal</div>
+          </div>
+        </div>
+
+        <div
+          class="box box-3"
+          style="
+            background-image: url('../public/img/gallery/box_gallery3-2.jpg');
+          ">
+          <div class="word-wrapper">
+            <div class="letter">T</div>
+            <div class="rest">aiwan</div>
+          </div>
+        </div>
+
+        <div
+          class="box box-4"
+          style="
+            background-image: url('../public/img/gallery/box_gallery4-1.jpg');
+          ">
+          <div class="word-wrapper">
+            <div class="letter">A</div>
+            <div class="rest">ustralia</div>
+          </div>
+        </div>
+
+        <div
+          class="box box-5"
+          style="
+            background-image: url('../public/img/gallery/box_gallery5-2.jpg');
+          ">
+          <div class="word-wrapper">
+            <div class="letter">C</div>
+            <div class="rest">hina</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="conference" class="conference-section fade-in-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Conference Program</h2>
+            <p class="section-subtitle">
+              Join industry leaders and experts for insightful discussions on
+              tourism trends and innovations
+            </p>
+          </div>
+
+          <div class="conference-timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+                <div class="marker-line"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-date">Day 1 • October 15,'26</div>
+                <h3 class="timeline-title">Sustainable Tourism Development</h3>
+                <p class="timeline-description">
+                  Exploring innovative approaches to sustainable tourism that
+                  benefit local communities and preserve natural resources.
+                </p>
+                <div class="timeline-speakers">
+                  <div class="speaker-avatar">JD</div>
+                  <div class="speaker-info">
+                    <div class="speaker-name">Dr. Jane Doe</div>
+                    <div class="speaker-role">
+                      Director, Sustainable Tourism Institute
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+                <div class="marker-line"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-date">Day 2 • October 16,'26</div>
+                <h3 class="timeline-title">Digital Transformation in Tourism</h3>
+                <p class="timeline-description">
+                  How technology is reshaping the tourism industry and creating
+                  new opportunities for businesses and travelers.
+                </p>
+                <div class="timeline-speakers">
+                  <div class="speaker-avatar">JS</div>
+                  <div class="speaker-info">
+                    <div class="speaker-name">John Smith</div>
+                    <div class="speaker-role">CEO, TravelTech Innovations</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+                <div class="marker-line"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-date">Day 3 • October 17,'26</div>
+                <h3 class="timeline-title">Cultural Heritage Preservation</h3>
+                <p class="timeline-description">
+                  Strategies for protecting cultural heritage while promoting
+                  tourism and economic development.
+                </p>
+                <div class="timeline-speakers">
+                  <div class="speaker-avatar">ME</div>
+                  <div class="speaker-info">
+                    <div class="speaker-name">Maria Elena</div>
+                    <div class="speaker-role">
+                      UNESCO Cultural Heritage Specialist
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="conference-cta">
+            <a href="conference.html#conf-speakers-sec">
+              <button class="cta-button primary large">View Full Program</button>
+            </a>
+            <a href="registration.html">
+              <button class="cta-button secondary large">
+                Register for Conference
+              </button>
+            </a>
+          </div>
+        </div>
+      </section> -->
+
+    <!-- Integrated Highlights Section from test2.html -->
+    <section class="highlights-section">
+      <div class="highlights-content">
+        <!-- Left Side: Text Content -->
+        <div class="highlights-left">
+          <div class="highlights-tag fade-in-left-right">2026 • GLOBAL</div>
+          <h1 class="highlights-title fade-in-left-right">
+            Experience the Future of Tourism
+          </h1>
+          <p class="highlights-subtitle fade-in-left-right">
+            Witness the groundbreaking INTAC'26 event that brought together 50+
+            countries in an unprecedented celebration of global tourism
+            innovation.
+          </p>
+
+          <!-- Video Stats -->
+          <div class="video-stats fade-in-left-right">
+            <div class="stat-item2">
+              <div class="stat-number">4K</div>
+              <div class="stat-label2">Ultra HD Quality</div>
+            </div>
+            <div class="stat-item2">
+              <div class="stat-number">2:12</div>
+              <div class="stat-label2">Minutes</div>
+            </div>
+            <div class="stat-item2">
+              <div class="stat-number">50+</div>
+              <div class="stat-label2">Countries Featured</div>
+            </div>
+            <div class="stat-item2">
+              <div class="stat-number">2026</div>
+              <div class="stat-label2">Year of Event</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Video Player -->
+        <div class="highlights-right">
+          <div class="highlights-video-container fade-in-right-left">
+            <div class="video-wrapper">
+              <div class="video-poster" id="highlightsVideoPoster">
+                <img
+                  src="../public/img/brands/intac_logo4.jpg"
+                  alt="INTAC'26 Highlights"
+                  class="poster-image" />
+                <div class="video-overlay">
+                  <div class="play-pulse">
+                    <button class="play-button" id="highlightsPlayButton">
+                      <i class="fas fa-play"></i>
+                    </button>
+                  </div>
+                  <div class="video-caption">
+                    The Complete INTAC'26 Experience
+                  </div>
+                  <div class="video-duration">
+                    <i class="fas fa-clock"></i>
+                    <span>2:12 • 4K Ultra HD</span>
+                  </div>
+                </div>
+              </div>
+              <div class="video-embed" id="highlightsVideoEmbed">
+                <iframe
+                  id="highlightsVideoPlayer"
+                  width="100%"
+                  height="100%"
+                  src=""
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands-section">
+      <div class="brands-title-section fade-in-section">
+        <h2 class="brands-title">Our Valued Partners</h2>
+        <p class="brands-subtitle">
+          Join the leading brands that trust our platform for global tourism
+          excellence.
+        </p>
+        <a href="registration.html" class="partner-button">Become a Partner?</a>
+      </div>
+
+      <div class="brands-wall fade-in-section">
+        <img
+          src="../public/img/brands/home-client.png"
+          alt="Our Brand Partners" />
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container fade-in-section">
+        <div class="contact-header fade-in-bottom-top">
+          <h2 class="contact-main-title">Contact Us</h2>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info-left fade-in-left-right">
+            <div class="contact-method">
+              <h3>Call from Local / Overseas</h3>
+              <p class="contact-number">+603 4141 5511</p>
+            </div>
+
+            <div class="contact-method">
+              <h3>Whatsapp Hotline</h3>
+              <p class="contact-number">+6012 232 5588</p>
+              <a
+                href="https://wa.me/60122325588"
+                class="whatsapp-button"
+                target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Chat on WhatsApp
+              </a>
+            </div>
+
+            <div class="contact-hours">
+              <p>Monday - Friday: 10am - 5pm</p>
+            </div>
+
+            <div class="contact-divider"></div>
+
+            <div class="contact-subtitle">
+              <h3>CONTACT US</h3>
+            </div>
+
+            <div class="contact-divider"></div>
+
+            <div class="event-info">
+              <h2 class="event-title">
+                International Tourism & Cultures<br />Exhibition & Conference
+              </h2>
+              <p class="event-date">3rd - 6th October 2024</p>
+              <p class="event-venue">Kuala Lumpur Convention Centre (KLCC)</p>
+            </div>
+          </div>
+
+          <div class="contact-info-right fade-in-right-left">
+            <div class="location-info">
+              <div class="address">
+                <p><strong>Kuala Lumpur Convention Centre</strong></p>
+                <p>41, Jalan Tun Ismail, Chow Kit, Sokibi</p>
+              </div>
+
+              <div class="location-details">
+                <p>Kuala Lumpur, Wilapah Perrakutuan</p>
+                <div class="rating">
+                  <span class="stars">4.3★★★★★</span>
+                  <span class="reviews">17,273 reviews</span>
+                </div>
+              </div>
+
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7752115331023!2d101.71083757600452!3d3.1538868531213446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d37bd3fcff%3A0x7706359b57f73cb7!2sKuala%20Lumpur%20Convention%20Centre!5e0!3m2!1sen!2smy!4v1765079714703!5m2!1sen!2smy"
+                  width="100%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+
+              <div class="map-link">
+                <a
+                  href="https://maps.app.goo.gl/RN6884hukCnF6zyh9"
+                  target="_blank"
+                  >View larger map</a
+                >
+              </div>
+
+              <div class="directions">
+                <p><strong>Directions</strong></p>
+                <div class="direction-steps">
+                  <p><strong>Kuala Lumpur Convention Centre (KLCC)</strong></p>
+                  <p>39km Main Media Abdel Aziz</p>
+                  <p>KAMPUNG BAKU</p>
+                  <p>Superpane Malaysia</p>
+                  <p>Crocodile</p>
+                  <p>SOOO Kurdai Institute</p>
+                </div>
+              </div>
+
+              <div class="map-footer">
+                <p>Map data ©2024 Google</p>
+                <div class="map-links">
+                  <a href="#">Terms</a>
+                  <a href="#">Report in this event</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="modern-footer">
+      <div class="container-footer">
+        <div class="footer-content">
+          <div class="footer-section footer-about">
+            <div class="footer-logo">
+              <a href="index.html" class="logo">
+                <img
+                  src="../public/img/brands/intac_logo-footer.webp"
+                  alt="INTAC Logo" />
+              </a>
+            </div>
+            <p class="footer-description">
+              The International Tourism, Cultures Exhibition & Conference
+              (INTAC) is the premier platform connecting global tourism
+              professionals and celebrating diverse cultures.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/intac.my"
+                class="social-link"
+                aria-label="Facebook"
+                target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/intac.my"
+                class="social-link"
+                aria-label="Instagram"
+                target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="index.html#hero-background-container">Home</a>
+              </li>
+              <li><a href="conference.html#overview">About INTAC</a></li>
+              <li>
+                <a href="conference.html#conf-prog-sec">Conference Program</a>
+              </li>
+              <li><a href="#">Exhibitors</a></li>
+              <li><a href="registration.html">Visitor Registration</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+              <li><a href="news.html#news-update-sec">News & Updates</a></li>
+              <li><a href="news.html#gallery-sec">Media Gallery</a></li>
+              <li><a href="#">Travel Information</a></li>
+              <li><a href="contact.html#faq-sec">FAQ</a></li>
+              <li><a href="contact.html#contact-sec">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-text">
+                  <p>Malaysia International Exhibition & Showroom (MIES)</p>
+                  <p>Kuala Lumpur, Malaysia</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-text">
+                  <p>+603 1234 5678</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-text">
+                  <p>info@intac.my</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            <p>
+              &copy; 2026 International Tourism, Cultures Exhibition &
+              Conference, All rights reserved.
+            </p>
+          </div>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main2.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/gh/ilja-van-eck/osmo/assets/gsap/InertiaPlugin.min.js"></script>
+  </body>
+</html>

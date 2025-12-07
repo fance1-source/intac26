@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.8, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+    <title>Visitor Registration - INTAC</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../public/img/brands/conf-background0.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../public/img/brands/conf-background0.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../public/img/brands/conf-background0.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../public/img/brands/conf-background0.png" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,200&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="modern-header">
+      <div class="header-container container">
+        <div class="logo-container">
+          <a href="index.html" class="logo">
+            <img
+              src="../public/img/brands/intac_logo-header.webp"
+              alt="INTAC Logo"
+              class="logo-img" />
+          </a>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="conference.html" class="nav-link">Conference</a>
+            </li>
+            <li class="nav-item active">
+              <a href="registration.html" class="nav-link"
+                >Visitor Registration</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="news.html" class="nav-link">News</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="reg-hero">
+      <div class="container">
+        <div class="reg-hero-content">
+          <h1 class="reg-hero-title">Visitor Registration</h1>
+          <p class="reg-hero-subtitle">
+            Register now for free access to INTAC'26 - The Premier Tourism &
+            Cultures Exhibition
+          </p>
+          <div class="reg-hero-badges">
+            <div class="reg-badge">
+              <i class="fas fa-check-circle"></i>
+              <span>Free Admission</span>
+            </div>
+            <div class="reg-badge">
+              <i class="fas fa-check-circle"></i>
+              <span>Access to All Exhibitions</span>
+            </div>
+            <div class="reg-badge">
+              <i class="fas fa-check-circle"></i>
+              <span>Networking Opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Process -->
+    <section class="reg-process">
+      <div class="container">
+        <div class="reg-process-steps">
+          <div class="reg-step active" data-step="1">
+            <div class="reg-step-number">1</div>
+            <div class="reg-step-label">Personal Details</div>
+          </div>
+          <div class="reg-step" data-step="2">
+            <div class="reg-step-number">2</div>
+            <div class="reg-step-label">Professional Information</div>
+          </div>
+          <div class="reg-step" data-step="3">
+            <div class="reg-step-number">3</div>
+            <div class="reg-step-label">Registration Options</div>
+          </div>
+          <div class="reg-step" data-step="4">
+            <div class="reg-step-number">4</div>
+            <div class="reg-step-label">Confirmation</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="reg-form-section">
+      <div class="container">
+        <div class="reg-container">
+          <!-- Form Steps -->
+          <form id="registrationForm" class="reg-form">
+            <!-- Step 1: Personal Details -->
+            <div class="reg-form-step active" data-step="1">
+              <div class="reg-step-header">
+                <h2>Personal Information</h2>
+                <p>Please provide your personal details</p>
+              </div>
+
+              <div class="reg-form-grid">
+                <div class="reg-form-group">
+                  <label for="salutation">Salutation *</label>
+                  <select id="salutation" name="salutation" required>
+                    <option value="">Select</option>
+                    <option value="mr">Mr.</option>
+                    <option value="ms">Ms.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="dr">Dr.</option>
+                    <option value="prof">Prof.</option>
+                  </select>
+                  <span class="reg-error-message"></span>
+                </div>
+
+                <div class="reg-form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" required />
+                  <span class="reg-error-message"></span>
+                </div>
+
+                <div class="reg-form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                  <span class="reg-error-message"></span>
+                </div>
+
+                <div class="reg-form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required />
+                  <span class="reg-error-message"></span>
+                </div>
+
+                <div class="reg-form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" required />
+                  <span class="reg-error-message"></span>
+                </div>
+
+                <div class="reg-form-group">
+                  <label for="country">Country *</label>
+                  <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="malaysia">Malaysia</option>
+                    <option value="singapore">Singapore</option>
+                    <option value="indonesia">Indonesia</option>
+                    <option value="thailand">Thailand</option>
+                    <option value="vietnam">Vietnam</option>
+                    <option value="philippines">Philippines</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span class="reg-error-message"></span>
+                </div>
+
+                <div class="reg-form-group full-width">
+                  <label for="address">Address</label>
+                  <textarea id="address" name="address" rows="3"></textarea>
+                  <span class="reg-error-message"></span>
+                </div>
+              </div>
+
+              <div class="reg-form-actions">
+                <button type="button" class="btn-next cta-button primary">
+                  Next Step
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Professional Information -->
+            <div class="reg-form-step" data-step="2">
+              <div class="reg-step-header">
+                <h2>Professional Information</h2>
+                <p>Tell us about your professional background</p>
+              </div>
+
+              <div class="reg-form-grid">
+                <div class="reg-form-group">
+                  <label for="company">Company/Organization *</label>
+                  <input type="text" id="company" name="company" required />
+                  <span class="reg-error-message"></span>
+                </div>
+
+                <div class="reg-form-group">
+                  <label for="jobTitle">Job Title *</label>
+                  <input type="text" id="jobTitle" name="jobTitle" required />
+                  <span class="reg-error-message"></span>
+                </div>
+
+                <div class="reg-form-group">
+                  <label for="industry">Industry Sector *</label>
+                  <select id="industry" name="industry" required>
+                    <option value="">Select Industry</option>
+                    <option value="travel-agency">
+                      Travel Agency/Tour Operator
+                    </option>
+                    <option value="hotel-resort">Hotel & Resort</option>
+                    <option value="airline">Airline</option>
+                    <option value="tourism-board">Tourism Board</option>
+                    <option value="event-management">Event Management</option>
+                    <option value="education">Education & Research</option>
+                    <option value="government">Government Agency</option>
+                    <option value="media">Media & Press</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span class="reg-error-message"></span>
+                </div>
+
+                <div class="reg-form-group">
+                  <label for="companySize">Company Size</label>
+                  <select id="companySize" name="companySize">
+                    <option value="">Select Size</option>
+                    <option value="1-10">1-10 employees</option>
+                    <option value="11-50">11-50 employees</option>
+                    <option value="51-200">51-200 employees</option>
+                    <option value="201-500">201-500 employees</option>
+                    <option value="501+">501+ employees</option>
+                  </select>
+                  <span class="reg-error-message"></span>
+                </div>
+              </div>
+
+              <div class="reg-interest-categories">
+                <h3>Areas of Interest</h3>
+                <p>
+                  Select the categories you're interested in (select all that
+                  apply)
+                </p>
+
+                <div class="reg-interest-grid">
+                  <div class="reg-interest-option">
+                    <input
+                      type="checkbox"
+                      id="interest-adventure"
+                      name="interests"
+                      value="adventure" />
+                    <label for="interest-adventure">
+                      <i class="fas fa-hiking"></i>
+                      Adventure Tourism
+                    </label>
+                  </div>
+
+                  <div class="reg-interest-option">
+                    <input
+                      type="checkbox"
+                      id="interest-cultural"
+                      name="interests"
+                      value="cultural" />
+                    <label for="interest-cultural">
+                      <i class="fas fa-landmark"></i>
+                      Cultural Tourism
+                    </label>
+                  </div>
+
+                  <div class="reg-interest-option">
+                    <input
+                      type="checkbox"
+                      id="interest-gastronomy"
+                      name="interests"
+                      value="gastronomy" />
+                    <label for="interest-gastronomy">
+                      <i class="fas fa-utensils"></i>
+                      Gastronomy Tourism
+                    </label>
+                  </div>
+
+                  <div class="reg-interest-option">
+                    <input
+                      type="checkbox"
+                      id="interest-eco"
+                      name="interests"
+                      value="eco" />
+                    <label for="interest-eco">
+                      <i class="fas fa-leaf"></i>
+                      Eco Tourism
+                    </label>
+                  </div>
+
+                  <div class="reg-interest-option">
+                    <input
+                      type="checkbox"
+                      id="interest-business"
+                      name="interests"
+                      value="business" />
+                    <label for="interest-business">
+                      <i class="fas fa-briefcase"></i>
+                      Business Tourism
+                    </label>
+                  </div>
+
+                  <div class="reg-interest-option">
+                    <input
+                      type="checkbox"
+                      id="interest-wellness"
+                      name="interests"
+                      value="wellness" />
+                    <label for="interest-wellness">
+                      <i class="fas fa-spa"></i>
+                      Wellness Tourism
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reg-form-actions">
+                <button type="button" class="btn-prev cta-button secondary">
+                  Previous
+                </button>
+                <button type="button" class="btn-next cta-button primary">
+                  Next Step
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Registration Options -->
+            <div class="reg-form-step" data-step="3">
+              <div class="reg-step-header">
+                <h2>Registration Options</h2>
+                <p>Choose your registration type and additional options</p>
+              </div>
+
+              <div class="reg-options">
+                <div class="reg-option-card selected" data-option="visitor">
+                  <div class="reg-option-header">
+                    <h3>Visitor Pass</h3>
+                    <div class="reg-price">FREE</div>
+                  </div>
+                  <div class="reg-option-features">
+                    <ul>
+                      <li>
+                        <i class="fas fa-check"></i> Access to Exhibition Halls
+                      </li>
+                      <li>
+                        <i class="fas fa-check"></i> Cultural Performances
+                      </li>
+                      <li><i class="fas fa-check"></i> Networking Sessions</li>
+                      <li>
+                        <i class="fas fa-check"></i> Product Demonstrations
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="reg-option-select">
+                    <input
+                      type="radio"
+                      name="registrationType"
+                      value="visitor"
+                      checked />
+                  </div>
+                </div>
+
+                <div class="reg-option-card" data-option="conference">
+                  <div class="reg-option-header">
+                    <h3>Conference Pass</h3>
+                    <div class="reg-price">RM 450</div>
+                  </div>
+                  <div class="reg-option-features">
+                    <ul>
+                      <li>
+                        <i class="fas fa-check"></i> All Visitor Pass Benefits
+                      </li>
+                      <li>
+                        <i class="fas fa-check"></i> Access to Conference
+                        Sessions
+                      </li>
+                      <li><i class="fas fa-check"></i> Conference Materials</li>
+                      <li>
+                        <i class="fas fa-check"></i> Lunch & Coffee Breaks
+                      </li>
+                      <li>
+                        <i class="fas fa-check"></i> Certificate of Attendance
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="reg-option-select">
+                    <input
+                      type="radio"
+                      name="registrationType"
+                      value="conference" />
+                  </div>
+                </div>
+
+                <div class="reg-option-card" data-option="vip">
+                  <div class="reg-option-header">
+                    <h3>VIP Pass</h3>
+                    <div class="reg-price">RM 850</div>
+                  </div>
+                  <div class="reg-option-features">
+                    <ul>
+                      <li>
+                        <i class="fas fa-check"></i> All Conference Pass
+                        Benefits
+                      </li>
+                      <li><i class="fas fa-check"></i> VIP Lounge Access</li>
+                      <li><i class="fas fa-check"></i> Priority Seating</li>
+                      <li>
+                        <i class="fas fa-check"></i> Gala Dinner Invitation
+                      </li>
+                      <li>
+                        <i class="fas fa-check"></i> Exclusive Networking Events
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="reg-option-select">
+                    <input type="radio" name="registrationType" value="vip" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="reg-additional-options">
+                <h3>Additional Options</h3>
+                <div class="reg-addon-options">
+                  <div class="reg-addon-option">
+                    <input
+                      type="checkbox"
+                      id="addon-workshop"
+                      name="addons"
+                      value="workshop" />
+                    <label for="addon-workshop">
+                      <span class="reg-addon-title"
+                        >Industry Workshop (Day 2)</span
+                      >
+                      <span class="reg-addon-price">+ RM 150</span>
+                    </label>
+                  </div>
+
+                  <div class="reg-addon-option">
+                    <input
+                      type="checkbox"
+                      id="addon-networking"
+                      name="addons"
+                      value="networking" />
+                    <label for="addon-networking">
+                      <span class="reg-addon-title"
+                        >Exclusive Networking Dinner</span
+                      >
+                      <span class="reg-addon-price">+ RM 200</span>
+                    </label>
+                  </div>
+
+                  <div class="reg-addon-option">
+                    <input
+                      type="checkbox"
+                      id="addon-materials"
+                      name="addons"
+                      value="materials" />
+                    <label for="addon-materials">
+                      <span class="reg-addon-title"
+                        >Digital Conference Materials</span
+                      >
+                      <span class="reg-addon-price">+ RM 50</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reg-form-actions">
+                <button type="button" class="btn-prev cta-button secondary">
+                  Previous
+                </button>
+                <button type="button" class="btn-next cta-button primary">
+                  Proceed to Confirmation
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 4: Confirmation -->
+            <div class="reg-form-step" data-step="4">
+              <div class="reg-step-header">
+                <h2>Confirmation</h2>
+                <p>Review your registration details before submitting</p>
+              </div>
+
+              <div class="reg-confirmation-summary">
+                <div class="reg-summary-section">
+                  <h3>Personal Information</h3>
+                  <div class="reg-summary-details" id="personal-summary"></div>
+                </div>
+
+                <div class="reg-summary-section">
+                  <h3>Professional Information</h3>
+                  <div
+                    class="reg-summary-details"
+                    id="professional-summary"></div>
+                </div>
+
+                <div class="reg-summary-section">
+                  <h3>Registration Details</h3>
+                  <div
+                    class="reg-summary-details"
+                    id="registration-summary"></div>
+                </div>
+
+                <div class="reg-summary-section">
+                  <h3>Total Amount</h3>
+                  <div class="reg-total-amount" id="total-amount">RM 0</div>
+                </div>
+              </div>
+
+              <div class="reg-terms-agreement">
+                <div class="reg-checkbox-group">
+                  <input type="checkbox" id="terms" name="terms" required />
+                  <label for="terms">
+                    I agree to the <a href="#">Terms & Conditions</a> and
+                    <a href="#">Privacy Policy</a>. I understand that my
+                    personal data will be processed in accordance with INTAC's
+                    data protection policy.
+                  </label>
+                </div>
+                <span class="reg-error-message"></span>
+              </div>
+
+              <div class="reg-form-actions">
+                <button type="button" class="btn-prev cta-button secondary">
+                  Previous
+                </button>
+                <button
+                  type="submit"
+                  class="reg-submit-button cta-button primary">
+                  <span class="reg-button-text">Complete Registration</span>
+                  <div class="reg-button-loader">
+                    <div class="reg-loader"></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Registration Sidebar -->
+          <div class="reg-sidebar">
+            <div class="reg-sidebar-card">
+              <h3>Event Details</h3>
+              <div class="reg-event-info">
+                <div class="reg-info-item">
+                  <i class="fas fa-calendar-alt"></i>
+                  <div>
+                    <strong>Date</strong>
+                    <p>3rd - 6th October 2026</p>
+                  </div>
+                </div>
+                <div class="reg-info-item">
+                  <i class="fas fa-clock"></i>
+                  <div>
+                    <strong>Time</strong>
+                    <p>9:00 AM - 6:00 PM Daily</p>
+                  </div>
+                </div>
+                <div class="reg-info-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div>
+                    <strong>Venue</strong>
+                    <p>Kuala Lumpur Convention Centre (KLCC)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reg-sidebar-card">
+              <h3>Why Attend?</h3>
+              <ul class="reg-benefits-list">
+                <li>
+                  <i class="fas fa-check"></i> Discover new tourism destinations
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Network with industry
+                  professionals
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Learn from expert conference
+                  sessions
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Experience cultural performances
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Explore business opportunities
+                </li>
+              </ul>
+            </div>
+
+            <div class="reg-sidebar-card reg-help-card">
+              <h3>Need Help?</h3>
+              <p>Contact our registration team for assistance</p>
+              <div class="reg-contact-info">
+                <p><i class="fas fa-phone"></i> +603 4141 5511</p>
+                <p><i class="fas fa-envelope"></i> registration@intac.my</p>
+              </div>
+              <a href="contact.html" class="reg-help-link">Contact Support</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="reg-modal">
+      <div class="reg-modal-content">
+        <div class="reg-modal-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h3>Registration Successful!</h3>
+        <p>
+          Thank you for registering for INTAC'26. Your registration has been
+          confirmed.
+        </p>
+        <div class="reg-confirmation-details">
+          <p>
+            <strong>Confirmation Number:</strong>
+            <span id="confirmationNumber">INTAC2026-0000</span>
+          </p>
+          <p>
+            A confirmation email has been sent to your registered email address.
+          </p>
+        </div>
+        <div class="reg-modal-actions">
+          <button class="modal-close cta-button primary">Download Badge</button>
+          <a href="index.html" class="cta-button secondary"
+            >Return to Homepage</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="modern-footer">
+      <div class="container-footer">
+        <div class="footer-content">
+          <div class="footer-section footer-about">
+            <div class="footer-logo">
+              <a href="index.html" class="logo">
+                <img
+                  src="../public/img/brands/intac_logo-footer.webp"
+                  alt="INTAC Logo" />
+              </a>
+            </div>
+            <p class="footer-description">
+              The International Tourism & Cultures Exhibition & Conference
+              (INTAC) is the premier platform connecting global tourism
+              professionals and celebrating diverse cultures.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/intac.my"
+                class="social-link"
+                aria-label="Facebook"
+                target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/intac.my"
+                class="social-link"
+                aria-label="Instagram"
+                target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="index.html#hero-background-container">Home</a>
+              </li>
+              <li><a href="conference.html#overview">About INTAC</a></li>
+              <li>
+                <a href="conference.html#conf-prog-sec">Conference Program</a>
+              </li>
+              <li><a href="#">Exhibitors</a></li>
+              <li><a href="registration.html">Visitor Registration</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+              <li><a href="news.html#news-update-sec">News & Updates</a></li>
+              <li><a href="news.html#gallery-sec">Media Gallery</a></li>
+              <li><a href="#">Travel Information</a></li>
+              <li><a href="contact.html#faq-sec">FAQ</a></li>
+              <li><a href="contact.html#contact-sec">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-text">
+                  <p>Malaysia International Exhibition & Showroom (MIES)</p>
+                  <p>Kuala Lumpur, Malaysia</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-text">
+                  <p>+603 1234 5678</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-text">
+                  <p>info@intac.my</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            <p>
+              &copy; 2026 International Tourism & Cultures Exhibition &
+              Conference. All rights reserved.
+            </p>
+          </div>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main2.js"></script>
+    <script src="js/config.js"></script>
+  </body>
+</html>
