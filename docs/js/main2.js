@@ -79,7 +79,7 @@ function showMaintenancePage() {
                 <div class="header-container container">
                     <div class="logo-container">
                         <a href="index.html" class="logo">
-                            <img src="../public/img/brands/intac_logo-header.webp" alt="INTAC Logo" class="logo-img" />
+                            <img src="public/img/brands/intac_logo-header.webp" alt="INTAC Logo" class="logo-img" />
                         </a>
                     </div>
                     <nav class="main-nav">
@@ -135,7 +135,7 @@ function showMaintenancePage() {
           <div class="footer-section footer-about">
             <div class="footer-logo">
               <a href="index.html" class="logo">
-                <img src="../public/img/brands/intac_logo-footer.webp" alt="INTAC Logo" />
+                <img src="public/img/brands/intac_logo-footer.webp" alt="INTAC Logo" />
               </a>
             </div>
             <p class="footer-description">
@@ -1770,3 +1770,4 @@ function initializeVideoHighlights() {
     });
   });
 }
+
